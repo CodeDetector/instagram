@@ -17,13 +17,26 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "config": {
+        "googleSignIn": {
+          "reservedClientId": "com.googleusercontent.apps.92632821443-9uvjacsea658mig2p2jcjnkefaqvjer7"
+        }
+      },
+      "googleServicesFile": "./google_android/GoogleService-info.plist",
+      "bundleIdentifier": "com.instagram.App",
+      "infoPlist": {
+        "NSRemindersUsageDescription":"App adds events to your local calender"
+      }
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+      "package": "com.dhruv_sharma.instagram",
+      "googleServicesFile": "./google_android/google-services.json",
+      "permissions":["READ_CALENDAR","WRITE_CALENDAR"]
     },
     "web": {
       "favicon": "./assets/favicon.png"
